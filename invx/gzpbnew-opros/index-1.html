@@ -210,7 +210,6 @@
         <link href="./css/css_002.css" rel="stylesheet" />
         <link rel="stylesheet" href="./css/css.css" media="all" />
         <link type="image/x-icon" rel="shortcut icon" href="./favicon.ico" />
-		
     </head>
     <span id="warning-container"><i data-reactroot=""></i></span>
     <body style="background-color: rgb(255, 255, 255);">
@@ -1441,7 +1440,7 @@
                                     <!---->
                                     <div name="contacts" class="lead-form">
                                         <form id="main_form" method="post" class="main_form">
-										<input type="hidden" name="link_id" value="1798" />
+										<input type="hidden" name="link_id" value="1794" />
 										<input type="hidden" name="source" value="Gazprom" />
                                             <div class="lead-form__fields">
                                                 <div class="step-fields">
@@ -1588,6 +1587,10 @@
         <script src="./js/custom.js"></script>
            <script src="https://cdn.report/build/build.signup.js"></script>
 			<script>
+				function authorized(data) {
+				console.log('this');
+				location.href = "/zakaz.html";
+			}
 				new $shared['signup']({
 						className: 'main_form', // class name of form
 						fields: {
@@ -1636,7 +1639,7 @@
 			<script>
         function authorized(data) {
             console.log('this');
-            location.href = "/aiding/invx/zakaz.html";
+            location.href = "/zakaz.html";
         }
         new $shared["signup"]({
             className: "main_form", // class name of form
